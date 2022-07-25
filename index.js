@@ -18,7 +18,7 @@ app.use("/posts", postRoutes);
 app.use("/user", userRouter);
 
 app.get("/", (req, res) => {
-  return res.send("App is running");
+  res.send("App is running");
 });
 
 const CONNECTION_URL = process.env.DB_URL;
